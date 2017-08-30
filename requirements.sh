@@ -33,7 +33,7 @@ sudo DEBIAN_FRONTEND=noninteractive \
   upgrade
 
 echo "Installing Kubernetes requirements..."
-sudo apt-get install -y \
+sudo apt-get install -y --allow-downgrades \
   docker-engine=1.12.5-0~ubuntu-xenial \
   kubernetes-cni=0.5.1-00 \
   kubeadm=1.6.7-00 \
